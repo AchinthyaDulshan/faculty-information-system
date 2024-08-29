@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("../fontawesome 6.4.2/fontawesome-free-6.4.2-web/css/all.css");
+
+
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+.dropdown-toggle::after { 
+    content: none; 
+} 
+
+.navbar-brand{
+    color: #660000;
+    font-weight: 700;
+}
+/* nav items hover effect  */
+/* .nav-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .2em;
+    border-radius: 1rem;
+    background: #660000;
+    transition: all .3s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    visibility: hidden;
+}
+.nav-item:hover{
+    color: #660000;
+}
+.nav-item:hover::after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+} */
+
+.top-map{
+    display: inline-block;
+    padding:0 3rem 0 1rem;
+    border-radius: 0 25px 25px 0 ;
+    background-color: #DF9A2A;
+}
+
+.breadcrumb{
+    margin: 0.5rem 0;
+}
+a{
+    text-decoration: none;
+}
+.footer{
+    /* position: sticky; */
+    /* bottom: 5%; */
+    border-radius: 0.5rem;
+    background-color: #660000;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.footer p{
+    margin: 0.5rem 0;
+}
+
+.profileImage{
+    border: 3px solid #DF9A2A;
+}
+
+.txtLabel{
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.txtLabel::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgba(128, 128, 128,0.3);
+}
+
+.txtValue{
+    font-weight: 500;
+}
+
+#nameWithInitialsProfile{
+    font-size: 1.2rem;
+}
+
+.btnCloseProfile ,.btnLogOut{
+    font-weight: bold;
+    padding: .3rem 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px red;
+    transition: .3s all;
+}
+.btnCloseProfile:focus, .btnCloseProfile:hover, .btnLogOut:focus, .btnLogOut:hover{
+    box-shadow: 0px 0px 10px red;
+    transform: scale(105%);
+    transition: .3s all;
+}
+.profileImage{
+    box-shadow: 0px 0px 5px #DF9A2A;
+    transition: .3s all;
+}
+.profileImage:focus, .profileImage:hover{
+    box-shadow: 0px 0px 10px #DF9A2A;
+    transform: scale(105%);
+    transition: .3s all;
+}
+
+.btnLogOut{
+    font-weight: 500;
+    padding: .3rem 1rem;
+    border-radius:2rem;
+    box-shadow: 0px 0px 4px red;
+    transition: .3s all;
+}
+.btnLogOut:focus, .btnLogOut:hover{
+    box-shadow: 0px 0px 8px red;
+    transform: scale(105%);
+    transition: .3s all;
+}

@@ -1,0 +1,228 @@
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #660000;
+}
+
+.uniName {
+    color: #DF9A2A;
+}
+
+.logInCard{
+    background-color: rgb(232, 230, 230);
+    box-shadow: 0px 0px 3px grey;
+}
+.logInCard h2,
+.logInCard label {
+    font-weight: 600;
+}
+
+.logInCard input[type="text"], .logInCard input[type="password"] {
+    border: 3px solid #DF9A2A;
+    text-align: center;
+    transition: .3s all;
+}
+
+.logInCard input[type="text"]:focus, .logInCard input[type="password"]:focus ,.logInCard input[type="text"]:hover, .logInCard input[type="password"]:hover  {
+    border: 3px solid #DF9A2A;
+    box-shadow: 1px 1px 10px #DF9A2A;
+    background-color: white;
+    transition: .3s all;
+}
+
+.btnLogIn {
+    font-weight: bold;
+    background-color: #DF9A2A;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px #DF9A2A;
+    transition: all .3s;
+}
+
+.btnLogIn:hover,
+.btnLogIn:focus {
+    background-color: #DF9A2A;
+    color: white;
+    box-shadow: 0px 0px 10px #DF9A2A;
+    transform: translateY(-3px);
+    transition: all .3s;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    border-radius: 0.5rem;
+    background-color: #660000;
+    color: white;
+    font-weight: 600;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.uniName {
+    position: relative;
+}
+
+.uniName::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 45%;
+    height: 10%;
+    bottom: 50%;
+    margin-left: 5%;
+    background-color: #660000;
+}
+
+.ImgLoginPage {
+    -webkit-animation: swing 3s infinite ease-in-out;
+    animation: swing 3s infinite ease-in-out;
+}
+
+.btnModal{
+    font-weight: bold;
+    padding: .3rem 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px red;
+    transition: .3s all;
+}
+.btnModal:focus, .btnModal:hover{
+    box-shadow: 0px 0px 10px red;
+    transform: scale(105%);
+    transition: .3s all;
+}
+
+@-webkit-keyframes swing {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url(../images/LogIn.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .uniName::after {
+        content: none;
+    }
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #660000;
+
+    }
+
+    .uniHeading {
+        text-align: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* body{
+        position: relative;
+    }
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background-image: url(../images/LogIn.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+    } */
+
+    .uniName::after {
+        content: none;
+    }
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #660000;
+
+    }
+
+    .uniHeading {
+        text-align: center;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url(../images/LogIn.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+
+    }
+    .uniName {
+        position: relative;
+    }
+    
+    .uniName::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 45%;
+        height: 10%;
+        bottom: 50%;
+        margin-left: 5%;
+        background-color: #660000;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-image: none;
+    }
+    .uniHeading {
+        text-align: left;
+    }
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

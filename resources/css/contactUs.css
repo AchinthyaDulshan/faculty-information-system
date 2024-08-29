@@ -1,0 +1,150 @@
+.btnSend{
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: .5rem 5rem ;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 3px green;
+    transition: .3s all;
+}
+.btnSend:hover{
+    box-shadow: 0px 0px 8px green;
+    /* transform: translateY(-5px); */
+    transform: scale(105%);
+    transition: .3s all;
+}
+.informationText{
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.informationText a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: #660000;
+}
+.informationText a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .2em;
+    border-radius: 1rem;
+    background: #660000;
+    transition: all .3s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    visibility: hidden;
+}
+
+.informationText a:hover::after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.contactUsCard{
+    border:0;
+    /* background-color: rgba(131, 215, 252, 0.5);
+    box-shadow: 0px 0px 5px grey; */
+}
+
+.contactUsCard input[type="text"], .contactUsCard input[type="email"] , .contactUsCard textarea{ 
+    transition: .3s all;
+    box-shadow: 0px 0px 0px 0.25rem #0097da;
+    background-color: #dff3fc;
+}
+
+.contactUsCard input[type="text"]:focus, .contactUsCard input[type="email"]:focus ,.contactUsCard input[type="text"]:hover, .contactUsCard input[type="email"]:hover ,.contactUsCard textarea:hover ,.contactUsCard textarea:focus {
+    border: 1px solid #DF9A2A;
+    box-shadow: 0 0 0 0.25rem #DF9A2A;
+    background-color: white;
+    transition: .3s all;
+}
+
+.btnModal{
+    font-weight: bold;
+    padding: .3rem 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px red;
+    transition: .3s all;
+}
+.btnModal:focus, .btnModal:hover{
+    box-shadow: 0px 0px 10px red;
+    transform: scale(105%);
+    transition: .3s all;
+}
+
+.btnModalSuccess{
+    font-weight: bold;
+    padding: .3rem 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px rgb(12, 169, 43);
+    transition: .3s all;
+}
+.btnModalSuccess:focus ,.btnModalSuccess:hover{
+    box-shadow: 0px 0px 10px rgb(12, 169, 43);
+    transform: scale(105%);
+    transition: .3s all;
+}
+
+.imgContactUs {
+    -webkit-animation: swing 3s infinite ease-in-out;
+    animation: swing 3s infinite ease-in-out;
+}
+@-webkit-keyframes swing {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url(../images/contactUs.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-image: url(../images/contactUs.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url(../images/contactUs.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-image: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

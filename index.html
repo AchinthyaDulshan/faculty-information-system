@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome! Faculty Information System</title>
+    <link rel="shortcut icon" href="resources/images/uokfavicon.ico">
+    <!-- link bootstrap 5.3.2 css  -->
+    <link rel="stylesheet" href="resources/bootstrap 5.3.2/css/bootstrap.min.css">
+    
+    <!-- link common css  -->
+    <link rel="stylesheet" href="resources/css/common.css">
+    <!-- link custom css  -->
+    <link rel="stylesheet" href="resources/css/index.css">
+
+    <!-- link jquery 3.7.1  -->
+    <script src="resources/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- main container start -->
+    <div class="container">
+
+        <div class="modal fade" id="errorMessage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+              <div class="modal-content text-center rounded-4">
+                <div class="modal-header">
+                    <!-- <i class="fa-solid fa-circle-xmark fa-lg" style="color: #ff0000;"></i> -->
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel"  style="margin: 0 auto;"> Something went wrong </h1>
+                  <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>S -->
+                </div>
+                <div class="modal-body" id="modalMessage">
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger btnModal" data-bs-dismiss="modal" style="margin: 0 auto;">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <!-- main content start  -->
+        <div class="main">
+
+            <div class="row ">
+                <!-- left side start  -->
+                <div class="col-md-7">
+                    <!-- heading start  -->
+                    <div class="row">
+                        <div class="col uniHeading">
+                            <h1 class="heading">Faculty Infromation System</h1>
+                        </div>
+                    </div>
+                    <!-- heading end  -->
+                    <!-- subtitle start  -->
+                    <div class="row">
+                        <div class="col-12 text-center text-md-start">
+                            <h3 class="uniName">University of Kelaniya</h3>
+                        </div>
+                    </div>
+                    <!-- subtitle end  -->
+
+                    <!-- Vision and mission start  -->
+                    <div class="row mt-3 d-sm-none d-md-block">
+                        <div class="col-12 text-center">
+                            <h5>University Vision</h5>
+                            <q>To become a centre of excellence in creation and dissemination
+                                of knowledge for sustainable development.</q>
+                            <hr>
+                            <h5>University Mission</h5>
+                            <q>To nurture intellectual citizens through creativity and innovation,
+                                who contribute to the national development.</q>
+                        </div>
+                    </div>
+                    <!-- Vision and mission end  -->
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <!-- card start  -->
+                            <div class="card logInCard rounded-4">
+                                <div class="card-body">
+                                    <!-- header start  -->
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <H2>Log In Here</H2>
+                                        </div>
+                                    </div>
+                                    <!-- header end  -->
+                                    <!-- username & password area start onsubmit="return false" -->
+                                    <form action="resources/controllers/login.php" method="post">
+                                        <div class="row">
+                                            <!-- username start  -->
+                                            <div class="col-md-6">
+                                                <!-- username label  -->
+                                                <div class="row">
+                                                    <div class="col label"><label for="username"> Username:</label>
+                                                    </div>
+                                                </div>
+                                                <!-- username txt input  -->
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input type="text" id="username" class="form-control"
+                                                            name="username">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- username end  -->
+                                            <!-- password start  -->
+                                            <div class="col-md-6">
+                                                <!-- password label  -->
+                                                <div class="row">
+                                                    <div class="col label">
+                                                        <label for="password">Password:</label>
+                                                    </div>
+                                                </div>
+                                                <!-- password input  -->
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input type="password" id="password" class="form-control"
+                                                            name="password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- password end  -->
+                                        </div>
+                                        <!-- username & password area end  -->
+                                        <!-- Login button start  -->
+                                        <div class="row justify-content-center mt-4">
+                                            <div class="col-4 text-center d-grid">
+                                                <!-- <button type="button" class="btn btnLogIn shadow-sm"></button> -->
+                                                <input type="submit" class="btn btnLogIn" value="Log In"
+                                                    id="btnLogIn">
+                                            </div>
+                                        </div>
+                                        <!-- login button end  -->
+                                    </form>
+                                    <!-- lost password start  -->
+                                    <div class="row mt-4 d-none">
+                                        <div class="col text-center">
+                                            <a href="#">Lost Password?</a>
+                                        </div>
+                                    </div>
+                                    <!-- lost password end  -->
+                                </div>
+                            </div>
+                            <!-- card end  -->
+                        </div>
+                    </div>
+                </div>
+                <!-- left side end  -->
+
+                <!-- right side start  -->
+                <div class="col-md-5 d-sm-none d-md-block">
+                    <img src="resources/images/LogIn.jpg" class="img-fluid ImgLoginPage" alt="" srcset="">
+                </div>
+                <!-- right side end  -->
+            </div>
+
+            <!-- footer start  -->
+            <div class="row footer mt-5">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <p>COST 22073 - Web Development Project 2023</p>
+                </div>
+            </div>
+            <!-- footer end  -->
+        </div>
+        <!-- main content end  -->
+    </div>
+    <!-- main container end  -->
+</body>
+
+<!-- link bootstrap js  -->
+<script src="resources/bootstrap 5.3.2/js/bootstrap.bundle.min.js"></script>
+<!-- link custom js  -->
+<script src="resources/js/login.js"></script>
+<!-- link common js  -->
+<script src="resources/js/common.js"></script>
+
+</html>

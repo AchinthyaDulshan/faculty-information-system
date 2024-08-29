@@ -1,0 +1,11 @@
+.cardCreditSummary{
+    font-weight: 500;
+    box-shadow: 0px 0px 5px gray;
+    transition: .3s all;
+}
+.cardCreditSummary:focus, .cardCreditSummary:hover{
+    font-weight: 600;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px gray;
+    transition: .3s all;
+}
