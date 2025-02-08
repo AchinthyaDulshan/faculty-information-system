@@ -1,4 +1,4 @@
-# Medical Center Management System using Java
+# Faculty Management System using php and mySQL
 
 This one is our final project of the course module **COST 22073 - Web Development** which is offered in 2nd year 2nd semester. This project is based on Faculty Information System of university and that is addressed most of the problems which are faced by users in current Faculty Information System.
 
@@ -60,6 +60,7 @@ This one is our final project of the course module **COST 22073 - Web Developmen
 ### Built with
 
 - [php](https://www.php.net/)
+- Semantic HTML5 markup
 - [Bootstrap 5.3.2](https://getbootstrap.com/)
 - [mySQL database](https://www.mysql.com/)
 - [JQuery](https://jquery.com/)
@@ -68,6 +69,7 @@ This one is our final project of the course module **COST 22073 - Web Developmen
 - [Apache](https://httpd.apache.org/)
 - [XAMPP](https://www.apachefriends.org/)
 - Custom css & js
+- Desktop-first workflow
 
 ## Author
 
